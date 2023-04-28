@@ -29,20 +29,33 @@
         }
         .auto-style7 {
             font-size: xx-large;
+            width: 203px;
         }
         .auto-style8 {
             font-size: large;
+            width: 203px;
         }
         .auto-style9 {
             height: 23px;
-            width: 668px;
+            width: 294px;
         }
         .auto-style10 {
-            width: 668px;
+            width: 294px;
         }
         .auto-style11 {
             height: 22px;
-            width: 668px;
+            width: 294px;
+        }
+        .auto-style12 {
+            height: 23px;
+            width: 203px;
+        }
+        .auto-style13 {
+            width: 203px;
+        }
+        .auto-style14 {
+            height: 22px;
+            width: 203px;
         }
     </style>
 </head>
@@ -52,7 +65,7 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2"></td>
-                    <td class="auto-style2"></td>
+                    <td class="auto-style12"></td>
                     <td class="auto-style4"></td>
                     <td class="auto-style9"></td>
                     <td class="auto-style2"></td>
@@ -61,7 +74,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style13">
                         <asp:LinkButton ID="lbtnAgregarSucursal" runat="server">Agregar Sucursal</asp:LinkButton>
                     </td>
                     <td class="auto-style5">
@@ -78,7 +91,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style3"></td>
-                    <td class="auto-style3"></td>
+                    <td class="auto-style14"></td>
                     <td class="auto-style6"></td>
                     <td class="auto-style11"></td>
                     <td class="auto-style3"></td>
@@ -96,7 +109,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style10">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -114,7 +127,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style10">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -123,7 +136,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>Nombre Sucursal:</td>
+                    <td class="auto-style13">Nombre Sucursal:</td>
                     <td class="auto-style5">
                         &nbsp;</td>
                     <td class="auto-style10">
@@ -135,7 +148,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>Descripción:</td>
+                    <td class="auto-style13">Descripción:</td>
                     <td class="auto-style5">
                         &nbsp;</td>
                     <td class="auto-style10">
@@ -147,7 +160,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>Provincias:</td>
+                    <td class="auto-style13">Provincias:</td>
                     <td class="auto-style5">
                         &nbsp;</td>
                     <td class="auto-style10">
@@ -161,7 +174,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>Direccion:</td>
+                    <td class="auto-style13">Direccion:</td>
                     <td class="auto-style5">
                         &nbsp;</td>
                     <td class="auto-style10">
@@ -173,7 +186,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style10">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -182,7 +195,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style5">
                         &nbsp;</td>
                     <td class="auto-style10">
@@ -194,7 +207,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style10">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -203,7 +216,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2"></td>
-                    <td class="auto-style2"></td>
+                    <td class="auto-style12"></td>
                     <td class="auto-style4">
                     </td>
                     <td class="auto-style9">
@@ -215,7 +228,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style10">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -224,7 +237,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style10">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -233,7 +246,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style10">&nbsp;</td>
                     <td>&nbsp;</td>
