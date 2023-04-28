@@ -15,9 +15,9 @@ namespace TP5_GRUPO_3
 
         }
 
-        protected void btnAceptar_Click(object sender, EventArgs e)
+        protected void btnAceptar_Click(object sender, EventArgs e)                                                   ///('" + txtNombreSucursal.Text + "', '" + txtDescripcion.Text + "', ' " +  txt.Direccion.Text + " '," + ddpProvincia.SelectedIndex + ")";
         {
-            String consulta = "INSERT INTO Sucursal(NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal,DireccionSucursal) values ('" + txtNombreSucursal.Text + "','Descripcion',1,'Direccion')";
+            String consulta = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) values ('" + txtNombreSucursal.Text + "', '" + txtDescripcion.Text + "', '" + 1 + " ','"+"Direccion +')";
             int filas = conexion.ejecutarTransaccion(consulta);
             if (filas == 0)
             {
@@ -32,6 +32,7 @@ namespace TP5_GRUPO_3
         public void limpiarCampos()
         {
             txtNombreSucursal.Text = "";
+            txtDescripcion.Text = "";
         }
     }
 }
