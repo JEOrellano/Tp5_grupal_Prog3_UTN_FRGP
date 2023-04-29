@@ -17,7 +17,7 @@ namespace TP5_GRUPO_3
         }
         protected void btnAceptar_Click(object sender, EventArgs e)                                                   ///('" + txtNombreSucursal.Text + "', '" + txtDescripcion.Text + "', ' " +  txt.Direccion.Text + " '," + ddpProvincia.SelectedIndex + ")";
         {
-            String consulta = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) values ('" + txtNombreSucursal.Text + "', '" + txtDescripcion.Text + "', '" + ddlProvincia.SelectedIndex + " ','"+"Direccion +')";
+            String consulta = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal) values ('" + txtNombreSucursal.Text + "', '" + txtDescripcion.Text + "', '" + ddlProvincia.SelectedIndex + " ','"+ txtDireccion.Text + " '" + ")";
             int filas = conexion.ejecutarTransaccion(consulta);
             if (filas == 0)
             {
@@ -34,6 +34,7 @@ namespace TP5_GRUPO_3
             txtNombreSucursal.Text = "";
             txtDescripcion.Text = "";
             ddlProvincia.SelectedIndex = 0;
+            txtDireccion.Text = ""; 
         }
     }
 }
