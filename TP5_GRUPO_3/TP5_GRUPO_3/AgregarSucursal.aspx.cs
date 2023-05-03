@@ -21,11 +21,13 @@ namespace TP5_GRUPO_3
             int filas = conexion.ejecutarTransaccion(consulta);
             if (filas == 0)
             {
-                //No se agregaba a a base de datos
+                // No se pudo agregar a la base de datos
+                lblAgregarDato.Text = "Error, no se a podido agregar la sucursal en la base de datos";
             }
             else
             {
-                //Se agrego con exito
+                // Se pudo agregar a la base de datos
+                lblAgregarDato.Text = "La sucursal se a agregado con exito en la base de datos";
             }
             limpiarCampos();
         }
@@ -35,6 +37,16 @@ namespace TP5_GRUPO_3
             txtDescripcion.Text = "";
             ddlProvincia.SelectedIndex = 0;
             txtDireccion.Text = ""; 
+        }
+
+        protected void lbtnListadoDeSucursales_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("ListadoSucursales.aspx");
+        }
+
+        protected void lbtnAgregarSucursal_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("AgregarSucursal.aspx");
         }
     }
 }
