@@ -41,7 +41,6 @@ namespace TP5_GRUPO_3
 
         protected void lbtnListadoDeSucursales_Click(object sender, EventArgs e)
         {
-            Server.Transfer("ListadoSucursales.aspx");
         }
 
         protected void lbtnAgregarSucursal_Click(object sender, EventArgs e)
