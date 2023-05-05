@@ -13,7 +13,7 @@ namespace TP5_GRUPO_3
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            conexion.cargaddl(ddlProvincia, "SELECT DescripcionProvincia FROM Provincia");
+            conexion.cargaddl(ddlProvincia, "SELECT DescripcionProvincia FROM Provincia", "DescripcionProvincia");
         }
         protected void btnAceptar_Click(object sender, EventArgs e)                                                   ///('" + txtNombreSucursal.Text + "', '" + txtDescripcion.Text + "', ' " +  txt.Direccion.Text + " '," + ddpProvincia.SelectedIndex + ")";
         {
@@ -41,6 +41,7 @@ namespace TP5_GRUPO_3
 
         protected void lbtnListadoDeSucursales_Click(object sender, EventArgs e)
         {
+            Server.Transfer("ListadoSucursales.aspx");
         }
 
         protected void lbtnAgregarSucursal_Click(object sender, EventArgs e)
