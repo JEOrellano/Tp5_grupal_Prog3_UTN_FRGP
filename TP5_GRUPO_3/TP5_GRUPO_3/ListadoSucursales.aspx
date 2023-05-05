@@ -48,7 +48,7 @@
                     <asp:LinkButton ID="lbAgregarAgregarSucursal" runat="server" OnClick="lbAgregar_Click">Agregar Sucursal</asp:LinkButton>
                 </td>
                 <td class="auto-style2">
-                    <asp:LinkButton ID="lbListadoSucursales" runat="server">Listado de sucursales</asp:LinkButton>
+                    <asp:LinkButton ID="lbListadoSucursales" runat="server" OnClick="lbListadoSucursales_Click">Listado de sucursales</asp:LinkButton>
                 </td>
                 <td class="auto-style7">
                     <asp:LinkButton ID="lbEliminar" runat="server">Eliminar Sucursal</asp:LinkButton>
@@ -92,6 +92,8 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
+        <asp:GridView ID="grdDatos" runat="server">
+        </asp:GridView>
     </form>
 </body>
 </html>

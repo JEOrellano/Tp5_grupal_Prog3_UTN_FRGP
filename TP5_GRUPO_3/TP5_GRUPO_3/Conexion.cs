@@ -11,7 +11,7 @@ namespace TP5_GRUPO_3
     {
         private String ruta = "Data Source=localhost\\sqlexpress;Initial Catalog=BDSucursales;Integrated Security=True";
 
-        public int ejecutarTransaccion(String consulta)
+        public int ejecutarTransaccion(String consulta) /// Metodo que genera una conexion con la base de datos y permite realizar un INSERT-DELETE-UPDATE
         {
             SqlConnection conexion = new SqlConnection(ruta);
             conexion.Open();
@@ -22,7 +22,7 @@ namespace TP5_GRUPO_3
             return filas;
         }
   
-        public DropDownList cargaddl(DropDownList drop, string consulta) /// RECIBE UN DDL, LO CARGA Y LO RETORNA
+        public DropDownList cargaddl(DropDownList drop, string consulta,string campo) /// Metodo que genera una conexion con la base de datos y permite cargar un dropdownlist
         {
             SqlConnection conexion = new SqlConnection(ruta);
             conexion.Open();
@@ -31,11 +31,24 @@ namespace TP5_GRUPO_3
             SqlDataReader dr = comando.ExecuteReader();
             while (dr.Read())
             {
-                drop.Items.Add(dr["DescripcionProvincia"].ToString());
+                drop.Items.Add(dr[campo].ToString());
                 drop.DataBind();
             }
             conexion.Close();
             return drop;
+        }
+
+
+        public void cargarGrid(GridView Gv,string consulta) /// Metodo que genera una conexion con la base de datos y permite cargar un gridview
+        {
+            SqlConnection conexion = new SqlConnection(ruta);
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            conexion.Open();
+            SqlDataReader dr = comando.ExecuteReader();
+            Gv.DataSource = dr;
+            Gv.DataBind();
+            conexion.Close();
+
         }
     }
 }
