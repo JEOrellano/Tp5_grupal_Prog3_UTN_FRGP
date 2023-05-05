@@ -76,10 +76,10 @@
             <tr>
                 <td class="auto-style2">Búsqueda ingrese Id Sucursal:</td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="txtIdSucursal" runat="server" Width="206px"></asp:TextBox>
+                    <asp:TextBox ID="txtIdSucursal" runat="server" Width="206px" ValidationGroup="Grupo1IdSucursal"></asp:TextBox>
                 </td>
                 <td class="auto-style7">
-                    <asp:Button ID="btnFiltrar" runat="server" OnClick="btnFiltrar_Click" Text="Filtrar" />
+                    <asp:Button ID="btnFiltrar" runat="server" OnClick="btnFiltrar_Click" Text="Filtrar" ValidationGroup="Grupo1IdSucursal" />
                 </td>
                 <td>
                     <asp:Button ID="btnMostrarTodos" runat="server" OnClick="btnMostrarTodos_Click" Text="Mostrar todos" />
@@ -87,7 +87,9 @@
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style2">
+                    <asp:RequiredFieldValidator ID="rfvBusquedaIdSucursal" runat="server" ControlToValidate="txtIdSucursal" ErrorMessage="Debe ingresar ID Sucursal" ForeColor="Red" ValidationGroup="Grupo1IdSucursal"></asp:RequiredFieldValidator>
+                </td>
                 <td class="auto-style7">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
