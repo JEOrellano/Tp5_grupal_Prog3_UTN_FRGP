@@ -170,7 +170,7 @@
                     <td class="auto-style10">
                         <asp:TextBox ID="txtNombreSucursal" runat="server" Width="254px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal"
-                        ErrorMessage="El nombre de la sucursal es obligatorio" ForeColor="Red" ValidationGroup="grupo1">*</asp:RequiredFieldValidator>
+                        ErrorMessage="El nombre de la sucursal es obligatorio" ForeColor="Red" ValidationGroup="grupo1"></asp:RequiredFieldValidator>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -184,7 +184,7 @@
                     <td class="auto-style10">
                         <asp:TextBox ID="txtDescripcion" runat="server" Width="254px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion"
-                        ErrorMessage="Es obligatorio ingresar una descripcion" ForeColor="Red" ValidationGroup="grupo1">*</asp:RequiredFieldValidator>
+                        ErrorMessage="Es obligatorio ingresar una descripcion" ForeColor="Red" ValidationGroup="grupo1"></asp:RequiredFieldValidator>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -200,7 +200,7 @@
                             <asp:ListItem>--Seleccionar--</asp:ListItem>
                         </asp:DropDownList>
                         <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia"
-                        ErrorMessage="Se debe seleccionar una provincia" ForeColor="Red" ValidationGroup="grupo1">*</asp:RequiredFieldValidator>
+                        ErrorMessage="Se debe seleccionar una provincia" ForeColor="Red" ValidationGroup="grupo1"></asp:RequiredFieldValidator>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -214,7 +214,7 @@
                     <td class="auto-style21">
                         <asp:TextBox ID="txtDireccion" runat="server" Width="254px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion"
-                        ErrorMessage="Es obligatorio ingresar una direccion" ForeColor="Red" ValidationGroup="grupo1">*</asp:RequiredFieldValidator>
+                        ErrorMessage="Es obligatorio ingresar una direccion" ForeColor="Red" ValidationGroup="grupo1"></asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style18"></td>
                     <td class="auto-style18"></td>
