@@ -24,31 +24,31 @@ namespace TP5_GRUPO_3
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control lbtnAgregarSucursal.
+        /// Control hlbtnAgregarSucursal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtnAgregarSucursal;
+        protected global::System.Web.UI.WebControls.HyperLink hlbtnAgregarSucursal;
 
         /// <summary>
-        /// Control lbtnListarSucursal.
+        /// Control hlbtnListadoSucursal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtnListarSucursal;
+        protected global::System.Web.UI.WebControls.HyperLink hlbtnListadoSucursal;
 
         /// <summary>
-        /// Control lbtnEliminarSucursal.
+        /// Control hlbtnEliminarSucursal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtnEliminarSucursal;
+        protected global::System.Web.UI.WebControls.HyperLink hlbtnEliminarSucursal;
 
         /// <summary>
         /// Control txtIDSucursal.

@@ -102,16 +102,16 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td class="auto-style13">
-                        <asp:LinkButton ID="lbtnAgregarSucursal" runat="server" OnClick="lbtnAgregarSucursal_Click">Agregar Sucursal</asp:LinkButton>
+                        <asp:HyperLink ID="hlbtnAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                     </td>
                     <td class="auto-style5">
                         &nbsp;</td>
                     <td class="auto-style10">
-                        <asp:LinkButton ID="lbtnListadoDeSucursales" runat="server" Style="margin-right:120px" OnClick="lbtnListadoDeSucursales_Click">Listado de Sucursales</asp:LinkButton>
-                        <asp:LinkButton ID="lbtnEliminarSucursal" runat="server">Eliminar Sucursal</asp:LinkButton>
+                        <asp:HyperLink ID="hlbtnListadoDeSucursales" runat="server" NavigateUrl="~/ListadoSucursales.aspx">Listado de Sucursales</asp:HyperLink>
                     </td>
                     <td>
-                        &nbsp;</td>
+                        <asp:HyperLink ID="hlbtnEliminarSucursal" runat="server">Eliminar Sucursal</asp:HyperLink>
+                    </td>
                     <td>
                         
                     </td>
@@ -136,13 +136,13 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td class="auto-style13">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style12"></td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style9"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
                 </tr>
                 <tr>
                     <td class="auto-style15"></td>
@@ -230,16 +230,16 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td class="auto-style13">&nbsp;</td>
-                    <td class="auto-style5">
-                        &nbsp;</td>
-                    <td class="auto-style10">
+                    <td class="auto-style18"></td>
+                    <td class="auto-style19"></td>
+                    <td class="auto-style20">
+                        </td>
+                    <td class="auto-style21">
                         <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" Width="89px" OnClick="btnAceptar_Click" ValidationGroup="grupo1" />
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style18"></td>
+                    <td class="auto-style18"></td>
+                    <td class="auto-style18"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
