@@ -19,18 +19,6 @@ namespace TP5_GRUPO_3
                 conexion.cargarGrid(grdDatos, consulta);
             }
         }
-
-        protected void lbAgregar_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("AgregarSucursal.aspx");
-            
-        }
-
-        protected void lbListadoSucursales_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("ListadoSucursales.aspx");
-        }
-
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
             string consulta = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, P.DescripcionProvincia AS Provincia, S.DireccionSucursal" +

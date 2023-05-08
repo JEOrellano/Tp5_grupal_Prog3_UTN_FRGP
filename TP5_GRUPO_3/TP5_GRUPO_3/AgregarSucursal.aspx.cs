@@ -38,15 +38,5 @@ namespace TP5_GRUPO_3
             ddlProvincia.SelectedIndex = 0;
             txtDireccion.Text = ""; 
         }
-
-        protected void lbtnListadoDeSucursales_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("ListadoSucursales.aspx");
-        }
-
-        protected void lbtnAgregarSucursal_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("AgregarSucursal.aspx");
-        }
     }
 }

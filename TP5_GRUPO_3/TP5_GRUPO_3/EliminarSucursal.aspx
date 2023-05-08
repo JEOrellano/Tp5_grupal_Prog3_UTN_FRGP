@@ -20,6 +20,17 @@
         .auto-style4 {
             width: 312px;
         }
+        .auto-style5 {
+            height: 23px;
+        }
+        .auto-style6 {
+            width: 332px;
+            height: 23px;
+        }
+        .auto-style7 {
+            width: 312px;
+            height: 23px;
+        }
     </style>
 </head>
 <body>
@@ -27,19 +38,19 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td>&nbsp;</td>
-                    <td class="auto-style3">
-                        <asp:LinkButton ID="lbtnAgregarSucursal" runat="server" OnClick="lbtnAgregarSucursal_Click">Agregar Sucursal</asp:LinkButton>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6">
+                        <asp:HyperLink ID="hlbtnAgregarSucursal" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                     </td>
-                    <td>&nbsp;</td>
-                    <td class="auto-style4">
-                        <asp:LinkButton ID="lbtnListarSucursal" runat="server" OnClick="lbtnListarSucursal_Click">Listado de Sucursales</asp:LinkButton>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style7">
+                        <asp:HyperLink ID="hlbtnListadoSucursal" runat="server" NavigateUrl="~/ListadoSucursales.aspx">Listado de Sucursal</asp:HyperLink>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>
-                        <asp:LinkButton ID="lbtnEliminarSucursal" runat="server">Eliminar Sucursal</asp:LinkButton>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style5">
+                        <asp:HyperLink ID="hlbtnEliminarSucursal" runat="server">Eliminar Sucursal</asp:HyperLink>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
