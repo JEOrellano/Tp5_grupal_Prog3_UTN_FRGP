@@ -13,5 +13,20 @@ namespace TP5_GRUPO_3
         {
 
         }
+
+        protected void BtnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lbtnAgregarSucursal_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("AgregarSucursal.aspx");
+        }
+
+        protected void lbtnListarSucursal_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("ListadoSucursales.aspx");
+        }
     }
 }
