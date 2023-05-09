@@ -48,7 +48,7 @@
                     </td>
                     <td class="auto-style5"></td>
                     <td class="auto-style5">
-                        <asp:HyperLink ID="hlbtnEliminarSucursal" runat="server">Eliminar Sucursal</asp:HyperLink>
+                        <asp:HyperLink ID="hlbtnEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     </td>
                     <td class="auto-style5"></td>
                 </tr>
@@ -75,17 +75,30 @@
                     <td class="auto-style3">Ingresar ID Sucursal: </td>
                     <td>&nbsp;</td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="txtIDSucursal" runat="server" Width="291px"></asp:TextBox>
+                        <asp:TextBox ID="txtIDSucursal" runat="server" Width="291px" ValidationGroup="IdSucursal"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:Button ID="BtnEliminar" runat="server" OnClick="BtnEliminar_Click" Text="Eliminar" Width="85px" />
+                        <asp:Button ID="BtnEliminar" runat="server" OnClick="BtnEliminar_Click" Text="Eliminar" Width="85px" ValidationGroup="IdSucursal" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style7">
+                        <asp:RequiredFieldValidator ID="rfvSucursal" runat="server" ControlToValidate="txtIDSucursal"
+                        ErrorMessage="Debe ingresar un ID sucursal" ForeColor="Red" ValidationGroup="IdSucursal"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style5"></td>
+                </tr>
+                <tr>
                     <td>&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        &nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -95,17 +108,8 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td class="auto-style3">
-                        <asp:Label ID="lblMensaje" runat="server" Text="Texto" ForeColor="Red"></asp:Label>
+                        <asp:Label ID="lblMensaje" runat="server" ForeColor="Red"></asp:Label>
                     </td>
-                    <td>&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>

@@ -38,14 +38,14 @@
         }
         .auto-style9 {
             height: 23px;
-            width: 513px;
+            width: 616px;
         }
         .auto-style10 {
-            width: 513px;
+            width: 616px;
         }
         .auto-style11 {
             height: 22px;
-            width: 513px;
+            width: 616px;
         }
         .auto-style12 {
             height: 23px;
@@ -66,7 +66,7 @@
             height: 24px;
         }
         .auto-style17 {
-            width: 513px;
+            width: 616px;
             height: 24px;
         }
         .auto-style18 {
@@ -81,7 +81,7 @@
             height: 30px;
         }
         .auto-style21 {
-            width: 513px;
+            width: 616px;
             height: 30px;
         }
     </style>
@@ -110,7 +110,7 @@
                         <asp:HyperLink ID="hlbtnListadoDeSucursales" runat="server" NavigateUrl="~/ListadoSucursales.aspx">Listado de Sucursales</asp:HyperLink>
                     </td>
                     <td>
-                        <asp:HyperLink ID="hlbtnEliminarSucursal" runat="server">Eliminar Sucursal</asp:HyperLink>
+                        <asp:HyperLink ID="hlbtnEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     </td>
                     <td>
                         
@@ -200,7 +200,7 @@
                             <asp:ListItem>--Seleccionar--</asp:ListItem>
                         </asp:DropDownList>
                         <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia"
-                        ErrorMessage="Se debe seleccionar una provincia" ForeColor="Red" ValidationGroup="grupo1"></asp:RequiredFieldValidator>
+                        ErrorMessage="Se debe seleccionar una provincia" ForeColor="Red" ValidationGroup="grupo1" InitialValue="--Seleccionar--"></asp:RequiredFieldValidator>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
