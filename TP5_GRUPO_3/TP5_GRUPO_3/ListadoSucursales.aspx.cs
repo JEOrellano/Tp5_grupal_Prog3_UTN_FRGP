@@ -32,6 +32,7 @@ namespace TP5_GRUPO_3
             string consulta = "SELECT S.Id_Sucursal, S.NombreSucursal AS Nombre, S.DescripcionSucursal AS Descripcion, P.DescripcionProvincia AS Provincia, S.DireccionSucursal AS Direccion" +
                     " FROM Sucursal AS S INNER JOIN Provincia AS P ON S.Id_ProvinciaSucursal = P.Id_Provincia";
             conexion.cargarGrid(grdDatos, consulta);
+            txtIdSucursal.Text = "";
         }
     }
 }
